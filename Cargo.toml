@@ -1,6 +1,26 @@
 [package]
 name = "timecapsule"
-version = "0.1.0"
+version = "1.0.0"
 edition = "2024"
+description = "A time-locked message system. encrypt messages that can only be decrypted after a specific date"
+authors = ["Sabir Khan <simplysabir@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/simplysabir/timecapsule"
+homepage = "https://github.com/simplysabir/timecapsule"
+readme = "README.md"
+keywords = ["encryption", "time-lock", "future", "messages", "security"]
+categories = ["command-line-utilities", "cryptography"]
+
 
 [dependencies]
+clap = { version = "4.0", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+chrono = { version = "0.4", features = ["serde"] }
+aes-gcm = "0.10"
+argon2 = "0.5"
+rand = "0.8"
+base64 = "0.21"
+dirs = "5.0"
+anyhow = "1.0"
+rpassword = "7.0"

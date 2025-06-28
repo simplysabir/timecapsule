@@ -24,3 +24,4 @@ base64 = "0.21"
 dirs = "5.0"
 anyhow = "1.0"
 rpassword = "7.0"
+uuid = { version = "1.0", features = ["v4"] }

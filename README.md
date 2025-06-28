@@ -1,4 +1,4 @@
-# TimeCapsule
+# timecapsule
 
 A command-line tool for creating time-locked encrypted messages that can only be decrypted after a specified date.
 
